@@ -1,0 +1,19 @@
+.row{
+	width: 85%;
+	margin: 0 auto;
+}
+
+.jumbotron{
+	padding: 40px;
+}
+
+.btn, input, label{
+	margin: 10px;
+}
+
+.link{
+	border: 3px solid gold;
+	width: 48%;
+	margin: 10px;
+	display: inline-block;
+}

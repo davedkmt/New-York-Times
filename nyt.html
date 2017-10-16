@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NYT Search</title>
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="row">
+    <div class="jumbotron">
+      <h2 class="title">
+          New York Times Search
+      </h2>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+              Search Parameters
+          </h3>
+      </div>
+      <div class="panel-body">
+        <form method="post">
+          <div class="form-group">
+            <label class="control-label" for="qDiv">Search Term:</label>
+            <input class="form-control" placeholder="Search Term" id="qDiv" type="text"/>
+            <label class="control-label " for="fqDiv">Filter Term:</label>
+            <input class="form-control" placeholder="Filter Term" id="fqDiv" type="text"/>
+            <label class="control-label " for="beginDiv" placeholder="1900">Start Year (Optional):</label>
+            <input class="form-control" placeholder="1949" id="beginDiv" type="text" />
+            <label class="control-label " for="endDiv">End Year (Optional):</label>
+            <input class="form-control"  placeholder="2049" id="endDiv" type="text" />
+            <div>
+              <button class="btn btn-primary submit" name="submit" type="submit">Submit</button>
+              <button class="btn btn-primary " name="submit" type="submit">Clear Results</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+              Top Articles
+          </h3>
+      </div>
+      <div class="panel-body" id="results">
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="nyt.js"></script>
+</body>
+</html>
